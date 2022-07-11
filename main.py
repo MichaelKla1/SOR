@@ -138,7 +138,7 @@ def makeDominantMatrix(matrix,resvec):
     return matrix,resvec
 
 
-def solutionOfMatrixBySOR(matrix, resvec):
+def solutionOfMatrixBySOR(matrix, resvec, w):
     """
     Prints the solution vector of square matrix that has result vector resvec by SOR method
     :param matrix: matrix
@@ -211,4 +211,4 @@ def solutionOfMatrixBySOR(matrix, resvec):
         print(printStr)
         print("Number of iterations: " + str(i + 1))
 
-solutionOfMatrixBySOR(matrixA, vectorB)
+solutionOfMatrixBySOR(matrixA, vectorB, w)
